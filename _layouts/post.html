@@ -13,7 +13,7 @@ layout: default
     </header>
 
     {% if page.image %}
-    <img class="img--feat is-hidden-mobile" src="/img/{{ page.image }}">
+    <img class="img--feat is-hidden-mobile" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/img/{{ page.image }}">
     {% endif %}
 
     <article class="post__content">
