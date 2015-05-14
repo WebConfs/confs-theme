@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div class="hero is-hidden-mobile"></div>
+<div class="grid">
+  <div class="grid__col--12">
+    <ul class="post">
+      <!-- This loops through the paginated posts -->
+      {% for post in paginator.posts %}
+        <li class="post__item">
+          <a class="post__title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <div class="post__meta">
+            <b class="post__author">{{ post.author }}</b>
+            <b class="post__sep">•</b>
+            <b class="post__date">{{ post.date | date: "%b %-d, %Y" }}</b>
+          </div>
+          {{ post.excerpt }}
+          <a class="btn--default" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a class="pagination__arrow-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          {{ page }}
+        {% elsif page == 1 %}
+          <a class="pagination__page" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        {% else %}
+          <a class="pagination__page" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a class="pagination__arrow-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>

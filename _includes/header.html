@@ -1,0 +1,27 @@
+<!-- Capture and store a URL -->
+{% capture location %}{{ page.url | split:'/' }}{% endcapture %}
+<header class="main-header" role="banner">
+  <div class="grid">
+    <div class="grid__col--12">
+      <a class="site-logo" href="{{ site.baseurl }}/" title="Webconfs.me – Home">
+        {{ site.title }}
+      </a>
+      <nav class="navbar" role="navigation">
+        <ul class="nav">
+        {% for page in site.pages %}
+          <!-- Compare the page title to the URL -->
+          {% assign current = page.title | downcase %}
+
+          {% if page.title %}
+          <!-- Highlight item if it matches the current URL -->
+          <li {% if location == current %} class="nav__item--current" {% else %} class="nav__item" {% endif %}>
+            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </li>
+          {% endif %}
+          
+        {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

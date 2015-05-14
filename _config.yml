@@ -1,0 +1,31 @@
+# Site settings
+title: My Blog
+email: coolwebconfs@gmail.com
+description: My simple blog.
+baseurl: ""
+url: ""
+twitter_username: guilh
+avatar: "https://pbs.twimg.com/profile_images/578368788535455744/WhLtbEaB.jpeg" # Set footer avatar
+paginate: 3
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+# Default Settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "My Author" # Set default author name
+      categories: "conferences"
+      layout: "post"
+      comments: true
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Blog</title>
+    <description>My simple blog.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 14 May 2015 15:35:01 -0400</pubDate>
+    <lastBuildDate>Thu, 14 May 2015 15:35:01 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>My First Post</title>
+        <description>&lt;p&gt;Hi there. This will be your first blog post—I hope you’re excited! To get started, give this post a new title by replacing “My First Post” with your post’s title. &lt;/p&gt;
+
+&lt;p&gt;You can change the post’s author name in the &lt;code&gt;_config.yml&lt;/code&gt; file, or add an &lt;code&gt;author&lt;/code&gt; variable in the front matter block. &lt;/p&gt;
+
+&lt;p&gt;To change the post image, replace the image name with your new image. If you don’t want to use an image in this post, delete the image variable in the front matter.&lt;/p&gt;
+
+&lt;p&gt;You can also add code to your blog, like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.col&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Have fun blogging!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 May 2015 00:00:00 -0400</pubDate>
+        <link>/first-post</link>
+        <guid isPermaLink="true">/first-post</guid>
+        
+        
+        <category>sample</category>
+        
+      </item>
+    
+  </channel>
+</rss>

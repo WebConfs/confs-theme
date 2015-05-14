@@ -1,0 +1,13 @@
+// ==========================================================================
+// Hero
+// ==========================================================================
+
+.hero {
+	height: 335px;
+	background: url('#{$path--rel}/bg-main.jpg'),
+	            linear-gradient(#75da8f, #77cae9);
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: em(50px);
+}
