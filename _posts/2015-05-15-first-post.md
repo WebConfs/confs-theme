@@ -10,16 +10,4 @@ You can change the post's author name in the `_config.yml` file, or add an `auth
 
 To change the post image, replace the image name with your new image. If you don't want to use an image in this post, delete the image variable in the front matter.
 
-You can also add code to your blog, like this:
-
-{% highlight scss %}
-.col {
-  width: 25%;
-  float: left;
-  & + & {
-    margin-left: 20px;
-  }
-}
-{% endhighlight %}
-
 Have fun blogging!
